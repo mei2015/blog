@@ -4,7 +4,7 @@
       <div class="flex flex-col justify-center xs:items-center sm:items-start">
         <p class="text-gray-700 xs:text-xl sm:text-2xl md:text-3xl font-bold xs:text-center sm:text-left whitespace-pre-line">
           最累的时候，
-          家人是你最好的归宿
+          家是你最好的归宿
         </p>
         <p class="mt-4 mb-10 text-gray-600 text-sm xs:text-center sm:text-left sm:whitespace-pre-line">
           人们赞美流星，是因为它燃烧着走完自己的全部路程!
