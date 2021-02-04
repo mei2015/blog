@@ -51,7 +51,7 @@ export default {
     // )
     // console.log(results)
 
-    const resolve = require.context('~/contents/', true, /\.md$/)
+    const resolve = require.context('~/contents/articles/', true, /\.md$/)
     const articles = resolve
       .keys()
       .reduce((res, key) => {

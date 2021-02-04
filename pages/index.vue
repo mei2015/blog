@@ -3,19 +3,18 @@
     <div class="py-10 flex justify-between items-center">
       <div class="flex flex-col justify-center xs:items-center sm:items-start">
         <p class="text-gray-700 xs:text-xl sm:text-2xl md:text-3xl font-bold xs:text-center sm:text-left whitespace-pre-line">
-          生命相承，殊途同归
-          世事变幻，但时间从不作答
+          最累的时候，
+          家人是你最好的归宿
         </p>
         <p class="mt-4 mb-10 text-gray-600 text-sm xs:text-center sm:text-left sm:whitespace-pre-line">
-          朽骨已在掩埋的宅邸中躺了多久，但纪念碑将于此山谷中永垂不朽。
-          孤勇之后，世界尽在眼前。
+          人们赞美流星，是因为它燃烧着走完自己的全部路程!
         </p>
         <div>
           <ns-button
             size="large"
-            @click="$router.push('/creations')"
+            @click="$router.push('/articles')"
           >
-            查看我的作品
+            查看文章
           </ns-button>
         </div>
       </div>
@@ -29,21 +28,21 @@
     <div class="mt-10 mb-16">
       <h2 class="mb-5 text-xl font-bold">联系我</h2>
       <ul class="text-gray-600">
-        <li class="mb-1">微信：czc12580520</li>
-        <li class="mb-1">QQ：czc12580520</li>
-        <li class="mb-1">邮箱：czc12580520@gmail.com</li>
+        <li class="mb-1">微信：new588088</li>
+        <li class="mb-1">QQ：1182798549</li>
+        <li class="mb-1">邮箱：1182798549@qq.com</li>
       </ul>
     </div>
 
-    <div class="mb-10">
+    <!-- <div class="mb-10">
       <h2 class="mb-5 text-xl font-bold">最近文章</h2>
       <recent-articles
         class="pt-10"
         :articles="filterArticles"
       ></recent-articles>
-    </div>
+    </div> -->
 
-    <banner class="my-16"></banner>
+    <!-- <banner class="my-16"></banner> -->
   </div>
 </template>
 

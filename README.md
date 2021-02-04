@@ -1,4 +1,4 @@
-# 令狐少侠的博客
+# 每的博客
 
 > 使用 Nuxt.js 构建 [Nuxt.js docs](https://nuxtjs.org)
 

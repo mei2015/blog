@@ -9,12 +9,12 @@ export default {
 
     head: {
         htmlAttrs: { lang: 'cmn-Hans-CN' },
-        title: '纪念碑谷 - 令狐聪的个人空间',
+        title: '每 - 个人博客',
         meta: [
             { charset: 'utf-8' },
             { name: 'viewport', content: 'width=device-width, initial-scale=1' },
             { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-            { hid: 'keywords', name: 'keywords', content: '令狐少侠,个人博客,nuxt blog,blog' },
+            { hid: 'keywords', name: 'keywords', content: '每,个人博客,1182798549@qq.om' },
         ],
         link: [
             { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

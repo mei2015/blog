@@ -1,8 +1,9 @@
-export default ({ title, desc = '令狐少侠的个人空间', script = [] }) => {
-  return {
-    head: {
-      title: `${title}-${desc}`,
-      script,
-    },
-  }
+/* eslint-disable */
+export default ({ title, desc = '每-个人博客', script = [] }) => {
+    return {
+        head: {
+            title: `${title}-${desc}`,
+            script,
+        },
+    }
 }
