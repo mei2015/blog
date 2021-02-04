@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module"
+  },
+  "extends": [
+    "@nuxtjs"
+  ],
+  "rules": {
+    "vue/no-v-html": 0,
+    "vue/attributes-order": 0,
+    "vue/max-attributes-per-line": 0,
+    "vue/html-closing-bracket-spacing": 0,
+    "vue/html-self-closing": 0,
+    "vue/singleline-html-element-content-newline": 0,
+    "vue/no-unused-components": 1,
+    "vue/no-unused-vars": 1,
+    "space-before-function-paren": 0,
+    "require-await": 1,
+    "no-console": 0,
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ]
+  }
+}

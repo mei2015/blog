@@ -1,0 +1,42 @@
+/* purgecss start ignore */
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@each $color in primary,
+success,
+warning,
+danger,
+dark {
+  .#{$color} {
+    color: map-get($color-map, $color);
+  }
+
+  .bg-#{$color} {
+    background-color: rgba(var(--ns-#{$color}), 1);
+  }
+}
+
+@each $size in sm,
+md,
+lg {
+  .#{$size}-radius {
+    border-radius: map-get($radius-map, $size);
+  }
+}
+
+@each $type in light,
+base,
+heavy {
+  .shadow-#{$type} {
+    box-shadow: map-get($shadow-map, $type);
+  }
+}
+
+.transition {
+  transition: $transition;
+}
+
+/* purgecss end ignore */

@@ -1,0 +1,58 @@
+/* purgecss start ignore */
+
+:root {
+  --ns-primary: 47, 88, 255;
+  --ns-success: 70, 201, 58;
+  --ns-warning: 255, 186, 0;
+  --ns-danger: 255, 71, 87;
+  --ns-dark: 30, 30, 30;
+}
+
+// Width And Height
+$header-height: 4rem;
+$menu-item-width: 5rem;
+$article-content-width: 800px;
+
+// Color
+$primary: rgba(var(--ns-primary), 1);
+$success: rgba(var(--ns-success), 1);
+$warning: rgba(var(--ns-warning), 1);
+$danger: rgba(var(--ns-danger), 1);
+$dark: rgba(var(--ns-dark), 1);
+
+@function setColor($color, $alpha) {
+  @return rgba(var(--ns-#{$color}), $alpha)
+}
+
+$color-map: (primary: $primary, success: $success, warning: $warning, danger: $danger);
+
+
+// Border
+$sm-radius: 0.45rem;
+$md-radius: 0.6rem;
+$lg-radius: 0.8rem;
+$radius-map: (sm: $sm-radius, md: $md-radius, lg: $lg-radius);
+
+// Shadow
+$light-shadow: 0 0 25px 10px rgba(90, 90, 90, 0.05);
+$base-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.06);
+$heavy-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.09);
+$shadow-map: (light: $light-shadow, base: $base-shadow, heavy: $heavy-shadow);
+
+// transition
+$transition: all 0.3s;
+
+@mixin text-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin text-overflow-multi-line($line: 3) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+/* purgecss end ignore */
