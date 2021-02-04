@@ -3,8 +3,9 @@
     <div class="py-10 flex justify-between items-center">
       <div class="flex flex-col justify-center xs:items-center sm:items-start">
         <p class="text-gray-700 xs:text-xl sm:text-2xl md:text-3xl font-bold xs:text-center sm:text-left whitespace-pre-line">
-          最累的时候，
-          家是你最好的归宿
+          写代码累到的时候，
+          加班疲惫的时候，
+          家是你最好的归宿！
         </p>
         <p class="mt-4 mb-10 text-gray-600 text-sm xs:text-center sm:text-left sm:whitespace-pre-line">
           人们赞美流星，是因为它燃烧着走完自己的全部路程!
@@ -20,18 +21,20 @@
       </div>
       <img
         class="cover"
-        src="https://gitee.com/chinesee/images/raw/master/img/img_029.png"
+        src="~/assets/images/home.png"
         alt="首页图片"
       >
+
+      <!-- src="https://gitee.com/chinesee/images/raw/master/img/img_029.png" -->
     </div>
 
-    <div class="mt-10 mb-16">
-      <h2 class="mb-5 text-xl font-bold">联系我</h2>
-      <ul class="text-gray-600">
+    <div class="mt-10 pt-8 conact">
+      <p class="text-xc text-gray-400">联系我 微信：new588088 QQ：1182798549 邮箱：1182798549@qq.com</p>
+      <!-- <ul class="text-gray-300">
         <li class="mb-1">微信：new588088</li>
         <li class="mb-1">QQ：1182798549</li>
         <li class="mb-1">邮箱：1182798549@qq.com</li>
-      </ul>
+      </ul> -->
     </div>
 
     <!-- <div class="mb-10">
@@ -49,14 +52,12 @@
 <script>
 import head from '~/mixins/head'
 
-import Banner from '~/components/home/Banner'
-import RecentArticles from '~/components/home/RecentArticles'
+// import Banner from '~/components/home/Banner'
+// import RecentArticles from '~/components/home/RecentArticles'
 
 export default {
-  components: { Banner, RecentArticles },
-
+  // components: { Banner, RecentArticles },
   mixins: [head({ title: '首页' })],
-
   asyncData() {
     const resolve = require.context('~/contents/', true, /\.md$/)
     const articles = resolve
@@ -106,7 +107,7 @@ export default {
 // 封面图
 .cover {
   transition: $transition;
-
+  padding-top: 100px;
   @media (max-width: 820px) {
     display: none;
   }
@@ -126,5 +127,9 @@ export default {
   @media (min-width: 1280px) {
     width: 700px;
   }
+}
+.conact {
+  padding-top: 150px;
+  text-align: center;
 }
 </style>

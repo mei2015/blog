@@ -8,9 +8,16 @@
       >
         <div class="w-1/3 mr-20">
           <img
+            v-if="cover"
             class="w-full h-full object-cover shadow-light"
             alt="文章封面"
             :src="cover"
+          >
+          <img
+            v-else
+            class="w-full h-full object-cover shadow-light"
+            alt="文章封面"
+            src="~/assets/images/pic.png"
           >
         </div>
         <div class="w-1/3">
@@ -50,22 +57,19 @@ export default {
     //   Prismic.Predicates.at('document.type', 'blog-post'),
     // )
     // console.log(results)
-
     const resolve = require.context('~/contents/articles/', true, /\.md$/)
     const articles = resolve
       .keys()
       .reduce((res, key) => {
+        console.info(121212121212121, resolve(key))
         const { attributes: { cover, title, description, time, status }, meta: { resourcePath } } = resolve(key)
         const paths = resourcePath.split('\\')
-        const path = paths
-          .slice(paths.indexOf(`${process.env.blogRoot}`) + 1)
-          .join('/')
-          .replace('.md', '')
-
+        const path = paths.slice(paths.indexOf(`${process.env.blogRoot}`) + 1).join('/').replace('.md', '')
         if (status !== 0) {
           const timestamp = new Date(time.replace(/[(年)|(月)|(日)]/g, '/')).getTime()
           res.push({ cover, path, title, description, time, timestamp })
         }
+        console.info(21312323, res)
         return res
       }, [])
 
